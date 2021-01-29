@@ -1,12 +1,33 @@
 #!/usr/bin/env python3
 # coding: utf-8
-
+import sys
+import argparse
 import numpy as np
 import pandas as pd
 import os       
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from glob import glob
+from pathlib import Path
+
+def parse_args(args):
+    parser = argparse.ArgumentParser(description="Enter description here")
+    parser.add_argument(
+                "-i",
+                "--input_dir",
+                default=".",
+                help="directory where input files will be read from"
+            )
+
+    parser.add_argument(
+                "-o",
+                "--output_dir",
+                default=".",
+                help="directory where output files will be written to"
+            )
+
+    return parser.parse_args(args)
+
 
 def insert(df, row):
     insert_loc = df.index.max()
@@ -46,9 +67,16 @@ def label_dataset(csv):
             
     return new_df
 
-def rename_files():
+if __name__=="__main__":
+    args = parse_args(sys.argv[1:])
+    input_path = args.input_dir
+    
+  
+    f = os.listdir(input_path)
+    input_files = [i for i in f if ".jpg" in i]
     df = label_dataset('training_solutions_rev1.csv')
-    input_files = glob('*.jpg')
+    
+    output_path = args.output_dir
     
     count1 =0
     count2 =0
@@ -58,34 +86,29 @@ def rename_files():
 
     for i in range(len(df)):
         if df['Label'].iloc[i] == '0' and count1<8: #8436
-            if (df['GalaxyID'].iloc[i] +'.jpg') in input_files:
+            if (str(df['GalaxyID'].iloc[i]) +'.jpg') in input_files:
                 img = plt.imread(str(df['GalaxyID'].iloc[i])+'.jpg')
-            mpimg.imsave('Class0_' + str(count1) + '.jpg', img)
+            mpimg.imsave(os.path.join(args.output_dir,'Class0_' + str(count1) + '.jpg'), img)
             count1+=1
         elif df['Label'].iloc[i] == '1' and count2<8: #8069
-            if (df['GalaxyID'].iloc[i] +'.jpg') in input_files:
+            if (str(df['GalaxyID'].iloc[i])+'.jpg') in input_files:
                 img = plt.imread(str(df['GalaxyID'].iloc[i])+'.jpg')
-            mpimg.imsave('Class1_' + str(count2) + '.jpg', img)
+            mpimg.imsave(os.path.join(args.output_dir,'Class1_' + str(count2) + '.jpg'), img)
             count2+=1
         elif df['Label'].iloc[i] == '2' and count3<3: #579
-            if (df['GalaxyID'].iloc[i] +'.jpg') in input_files:
+            if (str(df['GalaxyID'].iloc[i]) +'.jpg') in input_files:
                 img = plt.imread(str(df['GalaxyID'].iloc[i])+'.jpg')
-            mpimg.imsave('Class2_' + str(count3) + '.jpg', img)
+            mpimg.imsave(os.path.join(args.output_dir,'Class2_' + str(count3) + '.jpg'), img)
             count3+=1
         elif df['Label'].iloc[i] == '3' and count4<4: #3903
-            if (df['GalaxyID'].iloc[i] +'.jpg') in input_files:
+            if (str(df['GalaxyID'].iloc[i]) +'.jpg') in input_files:
                 img = plt.imread(str(df['GalaxyID'].iloc[i])+'.jpg')
-            mpimg.imsave('Class3_' + str(count4) + '.jpg', img)
+            mpimg.imsave(os.path.join(args.output_dir,'Class3_' + str(count4) + '.jpg'), img)
             count4+=1
         elif df['Label'].iloc[i] == '4' and count5<6: #6688
-            if (df['GalaxyID'].iloc[i] +'.jpg') in input_files:
+            if (str(df['GalaxyID'].iloc[i]) +'.jpg') in input_files:
                 img = plt.imread(str(df['GalaxyID'].iloc[i])+'.jpg')
-            mpimg.imsave('Class4_' + str(count5) + '.jpg', img)
+            mpimg.imsave(os.path.join(args.output_dir,'Class4_' + str(count5) + '.jpg'), img)
             count5+=1
-      
-def main():
-    rename_files()
-    return 0
-    
-if __name__ == '__main__':
-    main()
+            
+  
