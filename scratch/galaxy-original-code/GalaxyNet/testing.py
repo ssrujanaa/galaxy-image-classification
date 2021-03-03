@@ -14,18 +14,20 @@ resnet_arg_scope = resnet_utils.resnet_arg_scope
 
 #%%
 N_CLASSES = 5
-BATCH_SIZE =64
+BATCH_SIZE = 4
 IS_PRETRAIN = True
 #%%   Test the accuracy on test dataset. 
+DATA_DIR = "data/"
 
 def evaluate():
     with tf.Graph().as_default():
         
 
-        log_dir = '/home/daijiaming/Galaxy/GalaxyNet/logs/train/'
-        test_dir='/home/daijiaming/Galaxy/data3/testset/'
-        test_label_dir='/home/daijiaming/Galaxy/data3/test_label.csv'
-        n_test =2879
+        log_dir =  DATA_DIR + 'logs/train/'
+        test_dir= DATA_DIR + 'testset/'
+        test_label_dir=  DATA_DIR + 'test_label.csv'
+# what is the n_test? change for image that we have
+        n_test = 2879
                 
         val_image_batch, val_label_batch = input_data.read_galaxy11_test(data_dir=test_dir,
                                                                      label_dir=test_label_dir,
@@ -86,8 +88,8 @@ def evaluate():
                 print('Total testing samples: %d' %num_sample)
                 print('Total correct predictions: %d' %total_correct)
                 print('Average accuracy: %.4f%%' %(100*total_correct/num_sample))
-                np.savetxt('/home/daijiaming/Galaxy/GalaxyNet/labels2879.csv', a, delimiter = ',')
-                np.savetxt('/home/daijiaming/Galaxy/GalaxyNet/logits2879.csv', b, delimiter = ',')
+                np.savetxt('labels2879.csv', a, delimiter = ',')
+                np.savetxt('logits2879.csv', b, delimiter = ',')
             except Exception as e:
                 coord.request_stop(e)
             finally:
