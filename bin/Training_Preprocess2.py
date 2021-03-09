@@ -38,7 +38,6 @@ def read_galaxy(images, labels):
     final = []
     label_list1 =[]
     label_list2=[]
-    numpy_dict = {}
     
     #data augmentation
     for j in range(len(images)):
@@ -62,7 +61,7 @@ def read_galaxy(images, labels):
     for i in range(len(random_flip)):    
         im = tf.image.random_brightness(random_flip[i], max_delta=63)
         im = tf.image.random_contrast(im,lower=0.2,upper=1.8) 
-        #im = tf.image.per_image_standardization(im) 
+        im = tf.image.per_image_standardization(im) 
         final.append(im.numpy())
         
     return final, label_list1
