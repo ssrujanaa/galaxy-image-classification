@@ -34,7 +34,6 @@ def get_images(data_dir,label_dir):
     img_height=img_width
     numpy_image = []
     numpy_label = []
-    numpy_dict = {}
 
     with tf.name_scope('input'):
         label_list=label_dir
@@ -56,7 +55,6 @@ def get_images(data_dir,label_dir):
 
         for ele in list(iter(input_queue)):
             next_item = ele
-            print(next_item)
 
             label = next_item[1]
             label = tf.cast(label, tf.int32)
@@ -70,6 +68,10 @@ def get_images(data_dir,label_dir):
             image = tf.image.resize(image, [80, 80],method=tf.image.ResizeMethod.BILINEAR) 
 
             image = tf.cast(image, tf.float32)
+            
+            n_classes = 5
+            label = tf.one_hot(label, depth= n_classes)
+            label = tf.cast(label, dtype=tf.int32)
             
             numpy_image.append(image.numpy())
             numpy_label.append(label.numpy())
