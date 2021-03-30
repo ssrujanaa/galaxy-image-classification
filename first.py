@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[ ]:
+
 
 #!/usr/bin/env python3
 # coding: utf-8
@@ -61,6 +66,10 @@ def label_dataset(csv):
             label = '4'
         else:
             continue
+        if label != '$':
+            name = 'Class' + label +'_'+ str(df.at[i,'GalaxyID'])
+            insert(new_df,[name, label])
+        else:
     return new_df
 
 if __name__ == '__main__':
