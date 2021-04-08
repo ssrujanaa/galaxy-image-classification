@@ -17,6 +17,8 @@ Classification of galaxy images.
     
     5. Val_Preprocess.py and Test_Preprocess.py -> These scripts perform random cropping (Scale jittering) and image resizing on          
     val and test images respectively.
+    
+    6. Workflow.ipynb -> Workflow script to run all the above mentioned jobs using the Pegasus API.
 
 
 Alternatively, I have another subfoler called "WithoutPegasus". This folder has all the work that can be run on local machine without using Pegasus. To run the entire model, please follow the following steps:
