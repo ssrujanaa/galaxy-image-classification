@@ -3,7 +3,7 @@ Morphology classification of galaxy images.
 1. The Galaxy Zoo 2 dataset was downloaded from https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data?select=images_training_rev1.zip 
 2. The dataset contains JPG images of 61578 galaxies. Files are named according to their GalaxyId.
 3. This workflow aims at referencing the work done by paper: https://link.springer.com/article/10.1007/s10509-019-3540-1
-4. The workflow mainly comprises of the following python scripts:
+4. The workflow mainly comprises of the following python scripts in the bin folder:
     1. Data_Labeling.py -> This script is mainly focuses on getting a smaller subset of the Galaxy Zoo 2 dataset that matches either of the 5 different target morphologies as mentioned in the paper.
     
     2. Following this, data partioning into train, test and val is performed. The partitioned data is used for preprocessing.
