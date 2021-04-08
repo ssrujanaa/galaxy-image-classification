@@ -1,0 +1,120 @@
+x-pegasus: {apiLang: python, createdBy: scitech, createdOn: '04-08-21T12:14:50Z'}
+pegasus: '5.0'
+name: Galaxy
+jobs:
+- type: job
+  name: Data_Labeling.py.py
+  id: ID0000001
+  arguments: []
+  uses:
+  - {lfn: 100322.jpg, type: input}
+  - {lfn: Class2_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class0_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: 100434.jpg, type: input}
+  - {lfn: Class1_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class1_4.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: 100295.jpg, type: input}
+  - {lfn: Class2_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: 101135.jpg, type: input}
+  - {lfn: Class3_4.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class0_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class0_3.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class2_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class4_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class3_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class1_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class1_3.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: 100801.jpg, type: input}
+  - {lfn: Class0_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class4_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: 101232.jpg, type: input}
+  - {lfn: 100571.jpg, type: input}
+  - {lfn: Class2_3.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class3_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: 100143.jpg, type: input}
+  - {lfn: 100672.jpg, type: input}
+  - {lfn: Class4_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: 100740.jpg, type: input}
+  - {lfn: 107388.jpg, type: input}
+  - {lfn: 100428.jpg, type: input}
+  - {lfn: training_solutions_rev1.csv, type: input}
+  - {lfn: Class1_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class3_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: 101181.jpg, type: input}
+  - {lfn: 101355.jpg, type: input}
+  - {lfn: Class2_4.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: 100765.jpg, type: input}
+  - {lfn: 100727.jpg, type: input}
+  - {lfn: 100380.jpg, type: input}
+  - {lfn: 100053.jpg, type: input}
+  - {lfn: 106018.jpg, type: input}
+  - {lfn: Class3_3.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: 100288.jpg, type: input}
+  - {lfn: Class4_4.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: 100673.jpg, type: input}
+  - {lfn: Class0_4.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: 100122.jpg, type: input}
+  - {lfn: 100813.jpg, type: input}
+  - {lfn: 108959.jpg, type: input}
+  - {lfn: 100444.jpg, type: input}
+  - {lfn: Class4_3.jpg, type: output, stageOut: true, registerReplica: true}
+- type: job
+  name: Training_Preprocess1.py
+  id: ID0000002
+  arguments: []
+  uses:
+  - {lfn: Class2_0.jpg, type: input}
+  - {lfn: Class0_1.jpg, type: input}
+  - {lfn: Class4_0.jpg, type: input}
+  - {lfn: Class1_1.jpg, type: input}
+  - {lfn: Training_labels_Preprocess1.npy, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class4_1.jpg, type: input}
+  - {lfn: Class2_3.jpg, type: input}
+  - {lfn: Class3_0.jpg, type: input}
+  - {lfn: Class0_2.jpg, type: input}
+  - {lfn: Training_images_Preprocess1.npy, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class2_4.jpg, type: input}
+  - {lfn: Class3_2.jpg, type: input}
+  - {lfn: Class1_2.jpg, type: input}
+  - {lfn: Class0_0.jpg, type: input}
+  - {lfn: Class1_3.jpg, type: input}
+  - {lfn: Class4_3.jpg, type: input}
+- type: job
+  name: Training_Preprocess2.py
+  id: ID0000003
+  arguments: []
+  uses:
+  - {lfn: Training_labels_Preprocess2.npy, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Training_images_Preprocess2.npy, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Training_images_Preprocess1.npy, type: input}
+  - {lfn: Training_labels_Preprocess1.npy, type: input}
+- type: job
+  name: Val_Preprocess.py
+  id: ID0000004
+  arguments: []
+  uses:
+  - {lfn: Class2_1.jpg, type: input}
+  - {lfn: Class3_1.jpg, type: input}
+  - {lfn: Class1_0.jpg, type: input}
+  - {lfn: Class0_4.jpg, type: input}
+  - {lfn: Val_labels_Preprocess.npy, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class4_2.jpg, type: input}
+  - {lfn: Class3_3.jpg, type: input}
+  - {lfn: Val_images_Preprocess.npy, type: output, stageOut: true, registerReplica: true}
+- type: job
+  name: Test_Preprocess.py
+  id: ID0000005
+  arguments: []
+  uses:
+  - {lfn: Class1_4.jpg, type: input}
+  - {lfn: Class4_4.jpg, type: input}
+  - {lfn: Class3_4.jpg, type: input}
+  - {lfn: Test_images_Preprocess.npy, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Test_labels_Preprocess.npy, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Class0_3.jpg, type: input}
+  - {lfn: Class2_2.jpg, type: input}
+jobDependencies:
+- id: ID0000001
+  children: [ID0000002, ID0000004, ID0000005]
+- id: ID0000002
+  children: [ID0000003]

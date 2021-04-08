@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "Training_Preprocess2_py",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "./bin/Training_Preprocess2.py", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:////home/scitech/shared-data/Galaxy2/galaxy-image-classification/wf-scratch/LOCAL/scitech/pegasus/Galaxy/run0001/./Training_Preprocess2_py" }
+   ] }
+]

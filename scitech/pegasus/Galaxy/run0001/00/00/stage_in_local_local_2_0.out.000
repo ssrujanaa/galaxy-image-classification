@@ -1,0 +1,263 @@
+- invocation: True
+  version: 3.0
+  start: 2021-04-08T12:15:22.806-07:00
+  duration: 440.810
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "Galaxy"
+  wf-stamp: "2021-04-08T19:14:50+00:00"
+  interface: eth0
+  hostaddr: 172.17.0.2
+  hostname: 1abf3010e293
+  pid: 954
+  uid: 550
+  user: scitech
+  gid: 808
+  group: scitech-group
+  umask: 0o0022
+  mainjob:
+    start: 2021-04-08T12:15:22.810-07:00
+    duration: 440.806
+    pid: 965
+    usage:
+      utime: 0.121
+      stime: 0.035
+      maxrss: 17884
+      minflt: 9980
+      majflt: 0
+      nswap: 0
+      inblock: 8
+      outblock: 24
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 78
+      nivcsw: 124
+    status:
+      raw: 256
+      regular_exitcode: 1
+    executable:
+      file_name: /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2253
+      inode: 1584794
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-08-25T09:36:31-07:00
+      atime: 2020-08-25T09:36:31-07:00
+      ctime: 2020-08-25T09:36:37-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  jobids:
+    condor: 5.0
+  cwd: /home/scitech/shared-data/Galaxy2/galaxy-image-classification/scitech/pegasus/Galaxy/run0001
+  usage:
+    utime: 0.002
+    stime: 0.003
+    maxrss: 5192
+    minflt: 298
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 4
+    nivcsw: 4
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: 1abf3010e293
+    uname_release: 4.19.121-linuxkit
+    uname_machine: x86_64
+    ram_total: 6091320
+    ram_free: 1760432
+    ram_shared: 49392
+    ram_buffer: 356020
+    swap_total: 1048572
+    swap_free: 472912
+    cpu_count: 6
+    cpu_speed: 2600
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+    load_min1: 0.34
+    load_min5: 0.35
+    load_min15: 0.16
+    procs_total: 28
+    procs_running: 2
+    procs_sleeping: 24
+    procs_vmsize: 5317176
+    procs_rss: 543680
+    task_total: 65
+    task_running: 2
+    task_sleeping: 63
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o100644
+      size: 449
+      inode: 29720003
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2021-04-08T12:14:52-07:00
+      atime: 2021-04-08T12:14:52-07:00
+      ctime: 2021-04-08T12:14:52-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_950/ks.out.SPoNIt
+      descriptor: 3
+      mode: 0o100600
+      size: 1549
+      inode: 3187960
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2021-04-08T12:22:43-07:00
+      atime: 2021-04-08T12:15:22-07:00
+      ctime: 2021-04-08T12:22:43-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        2021-04-08 12:15:22,917    INFO:  Reading URL pairs from stdin
+        2021-04-08 12:15:22,919    INFO:  1 transfers loaded
+        2021-04-08 12:15:22,919    INFO:  PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin
+        2021-04-08 12:15:22,919    INFO:  LD_LIBRARY_PATH=
+        2021-04-08 12:15:22,957    INFO:  --------------------------------------------------------------------------------
+        2021-04-08 12:15:22,957    INFO:  Starting transfers - attempt 1
+        2021-04-08 12:15:24,960   ERROR:  Expected local file does not exist: ./bin/Training_Preprocess2.py
+        2021-04-08 12:17:39,827    INFO:  --------------------------------------------------------------------------------
+        2021-04-08 12:17:39,827    INFO:  Starting transfers - attempt 2
+        2021-04-08 12:17:41,835   ERROR:  Expected local file does not exist: ./bin/Training_Preprocess2.py
+        2021-04-08 12:22:41,599    INFO:  --------------------------------------------------------------------------------
+        2021-04-08 12:22:41,599    INFO:  Starting transfers - attempt 3
+        2021-04-08 12:22:43,604   ERROR:  Expected local file does not exist: ./bin/Training_Preprocess2.py
+        2021-04-08 12:22:43,606    INFO:  --------------------------------------------------------------------------------
+        2021-04-08 12:22:43,606    INFO:  Stats: Total 3 transfers, 0.0 B transferred in 441 seconds. Rate: 0.0 B/s (0.0 b/s)
+        2021-04-08 12:22:43,606    INFO:         Between sites local->local : 3 transfers, 0.0 B transferred in 441 seconds. Rate: 0.0 B/s (0.0 b/s)
+        2021-04-08 12:22:43,606 CRITICAL:  Some transfers failed! See above, and possibly stderr.
+        
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_950/ks.err.yPSISR
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 3187969
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2021-04-08T12:15:22-07:00
+      atime: 2021-04-08T12:15:22-07:00
+      ctime: 2021-04-08T12:15:22-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_950/ks.meta.EYwE2f
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 3187977
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2021-04-08T12:15:22-07:00
+      atime: 2021-04-08T12:15:22-07:00
+      ctime: 2021-04-08T12:15:22-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    kickstart:
+      error: 2
+      note: ignore error - it is just a warning
+      file_name: condor_exec.exe
+    logfile:
+      descriptor_number: 1
+      mode: 0o100644
+      size: 4096
+      inode: 29720158
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2021-04-08T12:22:43-07:00
+      atime: 2021-04-08T12:15:22-07:00
+      ctime: 2021-04-08T12:22:43-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+  environment:
+    "BATCH_SYSTEM": "HTCondor"
+    "CONDOR_JOBID": "5.0"
+    "KICKSTART_INTEGRITY_DATA": "/var/lib/condor/spool/local_univ_execute/dir_950/ks.integrity.InuAcE"
+    "KICKSTART_METADATA": "/var/lib/condor/spool/local_univ_execute/dir_950/ks.meta.EYwE2f"
+    "LANG": "en_US.UTF-8"
+    "PEGASUS_DAG_JOB_ID": "stage_in_local_local_2_0"
+    "PEGASUS_HOME": "/home/scitech/pegasus/dist/pegasus-5.0.0dev"
+    "PEGASUS_SITE": "local"
+    "PEGASUS_WF_LABEL": "Galaxy"
+    "PEGASUS_WF_UUID": "2c83cfbb-b4e9-4da7-912a-5f5befd74499"
+    "TEMP": "/var/lib/condor/spool/local_univ_execute/dir_950"
+    "TMP": "/var/lib/condor/spool/local_univ_execute/dir_950"
+    "TMPDIR": "/var/lib/condor/spool/local_univ_execute/dir_950"
+    "_CHIRP_DELAYED_UPDATE_PREFIX": "Chirp*"
+    "_CONDOR_ANCESTOR_272": "280:1617909104:3579110301"
+    "_CONDOR_ANCESTOR_280": "950:1617909322:564135846"
+    "_CONDOR_ANCESTOR_950": "954:1617909322:4101994987"
+    "_CONDOR_BIN": "/usr/bin"
+    "_CONDOR_JOB_AD": "/var/lib/condor/spool/local_univ_execute/dir_950/.job.ad"
+    "_CONDOR_JOB_IWD": "/home/scitech/shared-data/Galaxy2/galaxy-image-classification/scitech/pegasus/Galaxy/run0001"
+    "_CONDOR_JOB_PIDS": ""
+    "_CONDOR_MACHINE_AD": "/var/lib/condor/spool/local_univ_execute/dir_950/.machine.ad"
+    "_CONDOR_SCRATCH_DIR": "/var/lib/condor/spool/local_univ_execute/dir_950"
+    "_CONDOR_SLOT": ""
+  limits:
+    RLIMIT_CPU_soft: unlimited
+    RLIMIT_CPU_hard: unlimited
+    RLIMIT_FSIZE_soft: unlimited
+    RLIMIT_FSIZE_hard: unlimited
+    RLIMIT_DATA_soft: unlimited
+    RLIMIT_DATA_hard: unlimited
+    RLIMIT_STACK_soft: unlimited
+    RLIMIT_STACK_hard: unlimited
+    RLIMIT_CORE_soft: 0
+    RLIMIT_CORE_hard: 0
+    RESOURCE_5_soft: unlimited
+    RESOURCE_5_hard: unlimited
+    RLIMIT_NPROC_soft: 4096
+    RLIMIT_NPROC_hard: unlimited
+    RLIMIT_NOFILE_soft: 4096
+    RLIMIT_NOFILE_hard: 4096
+    RLIMIT_MEMLOCK_soft: 65536
+    RLIMIT_MEMLOCK_hard: 65536
+    RLIMIT_AS_soft: unlimited
+    RLIMIT_AS_hard: unlimited
+    RLIMIT_LOCKS_soft: unlimited
+    RLIMIT_LOCKS_hard: unlimited
+    RLIMIT_SIGPENDING_soft: 23255
+    RLIMIT_SIGPENDING_hard: 23255
+    RLIMIT_MSGQUEUE_soft: 819200
+    RLIMIT_MSGQUEUE_hard: 819200
+    RLIMIT_NICE_soft: 0
+    RLIMIT_NICE_hard: 0
+    RLIMIT_RTPRIO_soft: 0
+    RLIMIT_RTPRIO_hard: 0
+    RESOURCE_15_soft: unlimited
+    RESOURCE_15_hard: unlimited

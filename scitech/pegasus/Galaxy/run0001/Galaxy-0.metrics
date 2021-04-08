@@ -1,0 +1,42 @@
+{
+  "client": "pegasus-plan",
+  "version": "5.0.0dev",
+  "wf_api": "python",
+  "type": "metrics",
+  "start_time": 1.617909290943E9,
+  "end_time": 1.617909296098E9,
+  "duration": 5.155,
+  "exitcode": 0,
+  "root_wf_uuid": "2c83cfbb-b4e9-4da7-912a-5f5befd74499",
+  "wf_uuid": "2c83cfbb-b4e9-4da7-912a-5f5befd74499",
+  "data_config": "condorio",
+  "planner_args": "--output-sites local --cleanup inplace --submit workflow.yml ",
+  "uses_pmc": false,
+  "wf_metrics": {
+    "compute_tasks": 5,
+    "dax_tasks": 0,
+    "dag_tasks": 0,
+    "total_tasks": 5,
+    "deleted_tasks": 0,
+    "dax_input_files": 26,
+    "dax_inter_files": 27,
+    "dax_output_files": 6,
+    "dax_total_files": 59,
+    "compute_jobs": 5,
+    "clustered_jobs": 0,
+    "si_tx_jobs": 3,
+    "so_tx_jobs": 3,
+    "inter_tx_jobs": 0,
+    "reg_jobs": 3,
+    "cleanup_jobs": 5,
+    "create_dir_jobs": 1,
+    "dax_jobs": 0,
+    "dag_jobs": 0,
+    "chmod_jobs": 0,
+    "total_jobs": 20
+  },
+  "app_metrics": {
+    "name": "Galaxy"
+  }
+}
+

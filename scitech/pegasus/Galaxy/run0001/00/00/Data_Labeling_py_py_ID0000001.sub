@@ -1,0 +1,43 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : Galaxy, Index = 0, Count = null
+# SUBMIT FILE NAME : Data_Labeling_py_py_ID0000001.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=2c83cfbb-b4e9-4da7-912a-5f5befd74499 PEGASUS_WF_LABEL=Galaxy PEGASUS_DAG_JOB_ID=Data_Labeling_py_py_ID0000001 PEGASUS_SITE=condorpool"
++WantIOProxy = True
+error = /home/scitech/shared-data/Galaxy2/galaxy-image-classification/scitech/pegasus/Galaxy/run0001//00/00/Data_Labeling_py_py_ID0000001.err
+executable = /home/scitech/shared-data/Galaxy2/galaxy-image-classification/scitech/pegasus/Galaxy/run0001/00/00/Data_Labeling_py_py_ID0000001.sh
+initialdir = /home/scitech/shared-data/Galaxy2/galaxy-image-classification/wf-scratch/LOCAL/scitech/pegasus/Galaxy/run0001
+log = /home/scitech/shared-data/Galaxy2/galaxy-image-classification/scitech/pegasus/Galaxy/run0001/Galaxy-0.log
+notification = NEVER
+output = /home/scitech/shared-data/Galaxy2/galaxy-image-classification/scitech/pegasus/Galaxy/run0001//00/00/Data_Labeling_py_py_ID0000001.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 20
+should_transfer_files = YES
+submit_event_user_notes = pool:condorpool
+transfer_executable = true
+transfer_input_files = 101232.jpg,100428.jpg,101135.jpg,100122.jpg,100813.jpg,training_solutions_rev1.csv,101181.jpg,100380.jpg,100571.jpg,100673.jpg,101355.jpg,100444.jpg,100288.jpg,100143.jpg,100740.jpg,100727.jpg,100765.jpg,106018.jpg,108959.jpg,100295.jpg,100434.jpg,100672.jpg,100053.jpg,100801.jpg,107388.jpg,100322.jpg,Data_Labeling_py_py,/home/scitech/shared-data/Galaxy2/galaxy-image-classification/scitech/pegasus/Galaxy/run0001/00/00/stage_in_local_local_0_0.meta,/home/scitech/pegasus/dist/pegasus-5.0.0dev/share/pegasus/sh/pegasus-lite-common.sh,/home/scitech/shared-data/Galaxy2/galaxy-image-classification/scitech/pegasus/Galaxy/run0001/pegasus-worker-5.0.0dev-x86_64_rhel_7.tar.gz
+transfer_output_files = Class3_2.jpg,Class4_4.jpg,Class1_3.jpg,Class1_2.jpg,Class0_0.jpg,Class4_0.jpg,Class1_4.jpg,Class3_3.jpg,Class1_1.jpg,Class3_0.jpg,Class2_2.jpg,Class4_1.jpg,Class0_3.jpg,Class3_4.jpg,Class1_0.jpg,Class4_2.jpg,Class2_3.jpg,Class0_4.jpg,Class0_2.jpg,Class2_1.jpg,Class3_1.jpg,Class2_4.jpg,Class4_3.jpg,Class0_1.jpg,Class2_0.jpg
+universe = vanilla
+when_to_transfer_output = ON_EXIT
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "2c83cfbb-b4e9-4da7-912a-5f5befd74499"
++pegasus_wf_uuid = "2c83cfbb-b4e9-4da7-912a-5f5befd74499"
++pegasus_version = "5.0.0dev"
++pegasus_wf_name = "Galaxy-0"
++pegasus_wf_time = "20210408T191451+0000"
++pegasus_wf_xformation = "Data_Labeling.py.py"
++pegasus_wf_dax_job_id = "ID0000001"
++pegasus_wf_dag_job_id = "Data_Labeling_py_py_ID0000001"
++pegasus_job_class = 1
++pegasus_site = "condorpool"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

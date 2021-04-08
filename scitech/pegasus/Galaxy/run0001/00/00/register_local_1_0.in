@@ -1,0 +1,6 @@
+Val_images_Preprocess.npy file:////home/scitech/shared-data/Galaxy2/galaxy-image-classification/wf-output/Val_images_Preprocess.npy site="local"
+Val_labels_Preprocess.npy file:////home/scitech/shared-data/Galaxy2/galaxy-image-classification/wf-output/Val_labels_Preprocess.npy site="local"
+Test_images_Preprocess.npy file:////home/scitech/shared-data/Galaxy2/galaxy-image-classification/wf-output/Test_images_Preprocess.npy site="local"
+Test_labels_Preprocess.npy file:////home/scitech/shared-data/Galaxy2/galaxy-image-classification/wf-output/Test_labels_Preprocess.npy site="local"
+Training_labels_Preprocess1.npy file:////home/scitech/shared-data/Galaxy2/galaxy-image-classification/wf-output/Training_labels_Preprocess1.npy site="local"
+Training_images_Preprocess1.npy file:////home/scitech/shared-data/Galaxy2/galaxy-image-classification/wf-output/Training_images_Preprocess1.npy site="local"

@@ -1,0 +1,4 @@
+{"name": ".//00/00/create_dir_Galaxy_0_local.out", "timestamp": "2021-04-08T12:15:09.583743", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_1_0.out", "timestamp": "2021-04-08T12:22:41.311093", "exitcode": 1, "app_exitcode": 256, "retry": 0, "std_out": "", "std_err": "task exited with raw status 256\n"}
+{"name": ".//00/00/stage_in_local_local_2_0.out", "timestamp": "2021-04-08T12:22:46.520577", "exitcode": 1, "app_exitcode": 256, "retry": 0, "std_out": "", "std_err": "task exited with raw status 256\n"}
+{"name": ".//00/00/stage_in_local_local_0_0.out", "timestamp": "2021-04-08T12:22:51.728930", "exitcode": 1, "app_exitcode": 256, "retry": 0, "std_out": "", "std_err": "task exited with raw status 256\n"}

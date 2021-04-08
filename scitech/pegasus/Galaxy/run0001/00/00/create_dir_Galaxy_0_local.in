@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "mkdir",
+    "target": { "site_label": "local", "url": "file:////home/scitech/shared-data/Galaxy2/galaxy-image-classification/wf-scratch/LOCAL/scitech/pegasus/Galaxy/run0001" } }
+]

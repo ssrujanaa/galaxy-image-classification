@@ -1,0 +1,36 @@
+1617909302 INTERNAL *** MONITORD_STARTED ***
+1617909300 INTERNAL *** DAGMAN_STARTED 1.0 ***
+1617909304 create_dir_Galaxy_0_local SUBMIT 2.0 local - 1
+1617909305 create_dir_Galaxy_0_local EXECUTE 2.0 local - 1
+1617909307 create_dir_Galaxy_0_local JOB_TERMINATED 2.0 local - 1
+1617909309 create_dir_Galaxy_0_local JOB_SUCCESS 0 local - 1
+1617909309 create_dir_Galaxy_0_local POST_SCRIPT_STARTED 2.0 local - 1
+1617909309 create_dir_Galaxy_0_local POST_SCRIPT_TERMINATED 2.0 local - 1
+1617909314 create_dir_Galaxy_0_local POST_SCRIPT_SUCCESS 0 local - 1
+1617909319 stage_in_local_local_0_0 SUBMIT 3.0 local - 2
+1617909319 stage_in_local_local_1_0 SUBMIT 4.0 local - 3
+1617909319 stage_in_local_local_2_0 SUBMIT 5.0 local - 4
+1617909322 stage_in_local_local_1_0 EXECUTE 4.0 local - 3
+1617909322 stage_in_local_local_0_0 EXECUTE 3.0 local - 2
+1617909322 stage_in_local_local_2_0 EXECUTE 5.0 local - 4
+1617909758 stage_in_local_local_1_0 JOB_TERMINATED 4.0 local - 3
+1617909761 stage_in_local_local_1_0 JOB_FAILURE 1 local - 3
+1617909761 stage_in_local_local_1_0 POST_SCRIPT_STARTED 4.0 local - 3
+1617909761 stage_in_local_local_1_0 POST_SCRIPT_TERMINATED 4.0 local - 3
+1617909766 stage_in_local_local_1_0 POST_SCRIPT_FAILURE 1 local - 3
+1617909763 stage_in_local_local_2_0 JOB_TERMINATED 5.0 local - 4
+1617909766 stage_in_local_local_2_0 JOB_FAILURE 1 local - 4
+1617909766 stage_in_local_local_2_0 POST_SCRIPT_STARTED 5.0 local - 4
+1617909766 stage_in_local_local_2_0 POST_SCRIPT_TERMINATED 5.0 local - 4
+1617909771 stage_in_local_local_2_0 POST_SCRIPT_FAILURE 1 local - 4
+1617909770 stage_in_local_local_0_0 JOB_TERMINATED 3.0 local - 2
+1617909771 stage_in_local_local_0_0 JOB_FAILURE 1 local - 2
+1617909771 stage_in_local_local_0_0 POST_SCRIPT_STARTED 3.0 local - 2
+1617909771 stage_in_local_local_1_0 SUBMIT 6.0 local - 5
+1617909771 stage_in_local_local_1_0 EXECUTE 6.0 local - 5
+1617909771 stage_in_local_local_0_0 POST_SCRIPT_TERMINATED 3.0 local - 2
+1617909776 stage_in_local_local_0_0 POST_SCRIPT_FAILURE 1 local - 2
+1617909776 stage_in_local_local_2_0 SUBMIT 7.0 local - 6
+1617909779 stage_in_local_local_2_0 EXECUTE 7.0 local - 6
+1617909781 stage_in_local_local_0_0 SUBMIT 8.0 local - 7
+1617909785 stage_in_local_local_0_0 EXECUTE 8.0 local - 7

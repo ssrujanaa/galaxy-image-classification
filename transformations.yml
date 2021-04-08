@@ -1,0 +1,18 @@
+x-pegasus: {apiLang: python, createdBy: scitech, createdOn: '04-08-21T12:14:49Z'}
+pegasus: '5.0'
+transformations:
+- name: Data_Labeling.py.py
+  sites:
+  - {name: local, pfn: ./bin/Data_Labeling.py, type: stageable}
+- name: Training_Preprocess1.py
+  sites:
+  - {name: local, pfn: ./bin/Training_Preprocess1.py, type: stageable}
+- name: Training_Preprocess2.py
+  sites:
+  - {name: local, pfn: ./bin/Training_Preprocess2.py, type: stageable}
+- name: Val_Preprocess.py
+  sites:
+  - {name: local, pfn: ./bin/Val_Preprocess.py, type: stageable}
+- name: Test_Preprocess.py
+  sites:
+  - {name: local, pfn: ./bin/Test_Preprocess.py, type: stageable}
