@@ -17,3 +17,13 @@ Classification of galaxy images.
     
     5. Val_Preprocess.py and Test_Preprocess.py -> These scripts perform random cropping (Scale jittering) and image resizing on          
     val and test images respectively.
+
+
+Alternatively, I have another subfoler called "WithoutPegasus". This folder has all the work that can be run on local machine without using Pegasus. To run the entire model, please follow the following steps:
+1. First run the Data_Labeling.py script. This file is responsible for getting a smaller subset of the Galaxy Zoo 2 dataset that matches either of the 5 different target morphologies as mentioned in the paper.
+2. Next, run the Data_Partition.py script. Data partioning into train, test and val is performed.
+3. To preprocess train dataset, run the Training_Preprocess1.py followed by Training_Preprocess2.py
+4. To preprocess test datatset, run the Test_Preprocess.py
+5. To preprocess val dataset, run the Val_Preprocess.py
+6. Finally, run the train.py script to perform training on the preprocessed data. 
+    
